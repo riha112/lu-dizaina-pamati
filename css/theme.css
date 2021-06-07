@@ -982,7 +982,7 @@ button {
   outline: 26px solid #000000;
   outline-offset: -26px;
   pointer-events: none;
-  background: url("../img/map/map.png");
+  background: url("https://raw.githubusercontent.com/riha112/lu-dizaina-pamati/main/img/map/map.PNG");
   background-size: cover;
 }
 .map-body:after, .map-body:before {
