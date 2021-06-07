@@ -1,0 +1,91 @@
+doctype html
+html(lang="en")
+    head
+        title= "Zoo"
+        meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/theme.css")
+    body.zoo
+        .page-wrapper
+            include ./jade-components/menu.jade
+            img.branch-one(src="./img/zoo/zoo_branch_1.png")
+            img.branch-two(src="./img/zoo/zoo_branch_2.png")
+            img.bg-shadow(src="./img/home/bg_shadow.png")
+            img.bg-shadow(src="./img/home/bg_shadow.png")
+            img.foot(src="./img/zoo/zoo_foot.png")
+            img.scorpion.scorpion-one(src="./img/zoo/zoo-skorpion.png")
+            img.scorpion.scorpion-two(src="./img/zoo/zoo-skorpion.png")
+            img.scorpion.scorpion-three(src="./img/zoo/zoo-skorpion.png")
+            img.scorpion.scorpion-four(src="./img/zoo/zoo-skorpion.png")
+            .block
+                .block-one
+            .container 
+                .hero
+                    .hero-container
+                        .hero-content.center
+                            h1.hero-title.jst Riga National Zoological Garden
+                            p.hero-text.jst One of the most popular places in Riga, and my favorite place to spend time when there is nothing to do. Here you can see more than 120 different animals, from marine animals to tropical amphibians. 
+                main
+                    section.animals
+                        .title-wrapper.right
+                            .zoo-title.road-stop-number.text.jst Favorite Animals
+                        .carousel-wrapper
+                            .carousel-slide.grid
+                                .carousel-item.item-3
+                                    .animal
+                                        img.animal-image(src="./img/zoo/zoo_anim_lion.png")
+                                        .animal-title.jst Lion
+                                        .anima-latin (Leo)
+                                .carousel-item.item-3
+                                    .animal
+                                        img.animal-image(src="./img/zoo/zoo_anim_ostrich.png")
+                                        .animal-title.jst Ostrich
+                                        .anima-latin (Strutionum)
+                                .carousel-item.item-3
+                                    .animal
+                                        img.animal-image(src="./img/zoo/zoo_anim_penguin.png")
+                                        .animal-title.jst Penguin
+                                        .anima-latin (Penguin)
+                                .carousel-item.item-3
+                                    .animal
+                                        img.animal-image(src="./img/zoo/zoo_missing.png")
+                                        .animal-title.jst Alligator
+                                        .anima-latin (Alligator)
+                    section.admission
+                        .title-wrapper.left
+                            .zoo-title.road-stop-number.text.jst Admission
+                        .admission-ticket.adult
+                            .admission-image
+                                img.admission-image-adult(src="./img/zoo/zoo_ticket_adult.png")
+                            .admission-content
+                                .admission-title.jst Adult Ticket
+                                .admission-text.jst This ticket can be purchased by persons who have reached the age of 18 and are not yet in the pensioner group. With this ticket, you have access to all the zoo's attractions throughout the day - a tropical house, an aquarium, LV animals, etc.
+                                .admission-price 05.00
+                                    span  €
+                        .admission-ticket.children
+                            .admission-image.mobile
+                                img.admission-image-children(src="./img/zoo/zoo_ticket_children.png")
+                            .admission-content
+                                .admission-title.jst Children & Student Ticket
+                                .admission-text.jst This ticket can be purchased - by children (aged 4-18), students and pensioners (upon presentation of the relevant documents). Just like the adult ticket, this ticket even gives full access to all zoo attractions.
+                                .admission-price 03.00
+                                    span  €
+                            .admission-image.desktop
+                                img.admission-image-children(src="./img/zoo/zoo_ticket_children.png")
+                    section.contacts
+                        .title-wrapper.center
+                            .zoo-title.road-stop-number.text.jst Contacts
+                        .contacts-info-wrapper
+                            .contacts-info-address.jst Rīgas Nacionālais zooloģiskais dārzs Meža prospekts 1, Rīga, LV-1014
+                            .contacts-info-contacts
+                                .info
+                                    .label.jst Telephone:
+                                    .data 67518409
+                                .info
+                                    .label.jst E-mail:
+                                    .data info@rigazoo.lv
+                .branch-three-holder
+                    img.branch-three(src="./img/zoo/zoo_branch_3.png")
+                    img.snake(src="./img/zoo/zoo_snake.png")
+                include ./jade-components/footer.jade
+        include ./jade-components/frame.jade

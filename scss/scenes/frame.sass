@@ -1,0 +1,28 @@
+.frame
+    &>div
+        position: fixed
+        background: black
+        z-index: 1000
+    &-left, &-right
+        width: 30px
+        height: 100vh
+        top: 0
+    &-left
+        left: 0
+    &-right
+        right: 0
+    &-top, &-bottom
+        height: 30px
+        width: 100vw
+        left: 0
+    &-top
+        top: 0
+    &-bottom
+        bottom: 0
+
+@include mobile
+    .frame
+        &-left, &-right
+            width: 20px
+        &-top, &-bottom
+            height: 20px

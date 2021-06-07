@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    head
+        title= "Map"
+        meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/theme.css")
+    body.map
+        .page-wrapper
+            include ./jade-components/menu.jade
+            img.bg-shadow(src="./img/home/bg_shadow.png")
+            img.bg-shadow(src="./img/home/bg_shadow.png")
+            img.line(src="./img/map/map_line.png")
+            .block
+                .block-one
+            .container 
+                .hero
+                    .hero-container
+                        .hero-content.center
+                            h1.hero-title.jst Map
+                            p.hero-text.jst Check out my daily route to University and explore other interesting places via Google Maps
+                main
+                    .road-stop-number.text.map-title Route of my trip
+                    a.map-body#map(href="https://duckduckgo.com/?q=Jaunciema+1.+%C5%A1%C4%B7%C4%93rsl%C4%ABnija&atb=v157-1&ia=maps&iaxm=directions&metatoken=0&end=what%3AJaunciema%25201.%2520%25C5%25A1%25C4%25B7%25C4%2593rsl%25C4%25ABnija%252C%2520Riga%25201023%252C%2520Latvia&transport=drive&start=what%3ALatvijas%2520Universitate%2Cwhere%3ALatvijas%2520Universit%25C4%2581te%252C%2520Riga%25201050%252C%2520Latvia")
+                        //- iframe(allowfullscreen,loading="lazy",width="600", height="450",src="https://www.google.com/maps/embed/v1/directions?origin=place_id:EkVKYXVuY2llbWEgMS4gxaHEt8STcnNsxKtuaWphLCBaaWVtZcS8dSByYWpvbnMsIFLEq2dhLCBMVi0xMDIzLCBMYXR2aWEiLiosChQKEgkhqioblcjuRhFWc2ZFE5UwwxIUChIJwfqeIV_P7kYRNcAXqMMNlQo&destination=place_id:ChIJx2mqzdPP7kYRScM-SE20ohY&key=AIzaSyAEsdIOpO_FCzfd_330nFmeY01e8iVtTTc",  frameborder="0") 
+                    .map-info.grid
+                        .map-info-one.item-6
+                            .map-info-title.jst Check out my route
+                            .map-info-text.jst I start the trip 'Jaunciema 1st cross line', taking a taxi to the university takes around 30 minutes, driving with bus - 50 minutes. An alternative driving route would be through Jugla, where it would take 40 minutes by taxi, as a result I usually drive through Sarkandaugava to save time. 
+                        .map-info-two.item-6
+                            .map-info-title.jst Other landmarks
+                            .map-info-text.jst Depending on which road is used, it is possible to see other alternative attractions without previously mentioned - such as the Port, Golf Club, Art Museum, Alfa, etc. 
+                            img.map-info-lens(src="./img/map/map_lens.png")
+                include ./jade-components/footer.jade
+        include ./jade-components/frame.jade

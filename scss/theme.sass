@@ -1,0 +1,35 @@
+@import mixins.sass
+@import properties.sass
+@import grid.sass
+@import typography.sass
+@import layout.sass
+
+@import scenes/scenes.sass
+
+.bg-shadow
+    position: absolute
+    left: 50%
+    top: -400px
+    transform: translateX(-50%)
+    z-index: -10
+    mix-blend-mode: multiply
+
+.scorpion
+    display: none
+
+.invert
+    filter: invert(1)
+    background: black
+    .scorpion
+        display: block
+
+.foot
+    display: none
+    position: absolute
+    width: 32px
+    height: 84px
+    background: black
+    z-index: -1
+    background: url("../img/foot.png")
+    &.odd
+        background: url("../img/foot-odd.png")

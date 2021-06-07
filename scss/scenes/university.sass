@@ -1,0 +1,51 @@
+.university
+    .lang-switcher
+        z-index: 99
+    .hamburger 
+        .bar
+            background: white
+    .hero
+        margin-bottom: 200px
+        &::before
+            transform: rotate(-1.71deg)
+        &::after
+            background: linear-gradient(103.56deg, #4F73CF 15.86%, #25409E 82.46%)
+            transform: rotate(1.52deg)
+    
+.popup
+    background: rgba(0, 0, 0, 0.9)
+    position: fixed
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    z-index: 90
+    &-img
+        max-height: 23vh
+    &-title
+        font-size: 70px
+        font-weight: bold
+        font-family: $ff-poppins
+    &-text
+        font-size: 26px
+        font-weight: bold
+    &-sub-text
+        font-size: 14px
+        opacity: 0.6
+    &-btn
+        border-width: 3px
+        font-size: 16px
+        font-weight: bold
+        margin-top: 3rem
+        margin-bottom: 3rem
+        padding: 10px 20px
+    &-data
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 100%
+        max-width: 600px
+        padding: 10px
+        text-align: center
+        position: absolute
+        color: white

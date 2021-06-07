@@ -1,0 +1,106 @@
+.map
+    .block
+        &-one
+            background: #AC5597
+            top: 1310.38px
+            transform: translateX(-50%) rotate(6.23deg)
+    &-info
+        max-width: 1123px
+        margin: auto auto 15rem
+        position: relative
+        &-lens
+            position: absolute
+            bottom: -307px
+            right: -124px
+            z-index: -1
+        &-one
+            text-align: left
+        &-two
+            text-align: right
+        &-title
+            color: #FAFF00
+            font-family: $ff-poppins
+            font-weight: bold
+            font-size: 36px
+            line-height: 54px
+        &-text
+            font-size: 22px
+            line-height: 30px
+            color: white
+    main
+        text-align: center
+    &-title
+        margin-top: 5rem
+        margin-bottom: 5.5rem
+    .line
+        position: absolute
+        left: calc(50% + 171px)
+        top: 390px
+        transform: translateX(-50%)
+        z-index: -3
+    .hero::after
+        background: linear-gradient(103.56deg, #C36799 15.86%, #893996 82.46%)
+
+    &-body
+        max-width: 1161px
+        max-height: 664px
+        width: 100%
+        height: calc(100vw / 1.75113122)
+        position: relative
+        transform: rotate(1.66deg)
+        margin-bottom: 5.5rem
+        display: inline-block
+        &:after
+            outline: 26px solid #000000
+            outline-offset: -26px
+            pointer-events: none
+            background: url("../img/map/map.png")
+            background-size: cover
+        &:after, &:before
+            content: ""
+            position: absolute
+            display: block
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+        &:before
+            content: ""
+            position: absolute
+            display: block
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+            z-index: -1
+            background: rgba(143, 143, 143, 0.4)
+            transform: rotate(-4deg)
+
+@include mobile
+    .map
+        .line
+            top: 250px
+        .block
+            &-one
+                top: 800px
+        &-info
+            margin-bottom: 5rem
+            &-one, &-two
+                text-align: center
+            &-lens
+                max-width: 140%
+                bottom: -200px
+            &-title
+                font-size: 30px
+            &-text
+                font-size: 18px
+                line-height: 26px
+
+        &-title
+            margin-top: 3rem
+            margin-bottom: 3.5rem
+        &-body
+            margin-bottom: 2rem
+            &:after
+                outline: 16px solid #000000
+                outline-offset: -16px

@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+    head
+        title= "Sarkandaugava"
+        meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/theme.css")
+    body.sarkandaugava
+        .page-wrapper
+            include ./jade-components/menu.jade
+            img.bg-shadow(src="./img/home/bg_shadow.png")
+            img.bg-shadow(src="./img/home/bg_shadow.png")
+            img.steps(src="./img/sarkandaugava/sarkandaugava_art_steps.png")
+            .block
+                .block-one
+            .container 
+                .hero
+                    .hero-container
+                        .hero-content.center
+                            h1.hero-title.jst Sarkandaugava
+                            p.hero-text.jst Sarkandaugava is one of the Rigas cities. This city is rich with history and beautiful places. Driving through this city every day, I have the opportunity to see places like: Park, History Museum, Port, Golf Club and others. 
+                main
+                    section.road-stop.stop-sarkandaugava-tower
+                        img.road-stop-art.road-stop-art-sarkandaugava-tower(src="./img/sarkandaugava/sarkandaugava_art_tower.png")
+                        .road-stop-data
+                            .road-stop-number.text.jst Tower
+                            .road-stop-content
+                                h2.road-stop-title.jst Tower
+                                p.road-stop-text.jst One of the notable places to see when visiting Sarkandaugava are the ruins of the tower, which have been preserved for hundreds of years. This tower is freely accessible to all those visitors.
+                    section.road-stop.stop-sarkandaugava-museum
+                        .road-stop-data.white
+                            .road-stop-number.text.jst Museum
+                            .road-stop-content
+                                h2.road-stop-title.jst Museum of History
+                                p.road-stop-text.jst History Museum - a famous red house, the most beautiful sight in Sarkandaugava, which provides a lot of interesting information about the history of this city.
+                        img.road-stop-art.road-stop-art-sarkandaugava-museum(src="./img/sarkandaugava/sarkandaugava_art_museum.png")
+                include ./jade-components/footer.jade
+        include ./jade-components/frame.jade
+        script(src="./js/sarkandaugava.js")

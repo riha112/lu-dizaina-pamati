@@ -1,0 +1,116 @@
+.menu
+    margin: 77px 46px 15px
+    text-align: center
+    position: relative
+    min-height: 33.5px
+    &-items
+        position: relative
+        color: white
+        text-decoration: none
+        list-style: none
+        text-align: center
+        font-weight: bold
+        font-size: 26px
+        top: 150px
+        display: inline-block
+        a 
+            text-decoration: none
+            color: white
+            padding: 0.5rem
+            display: block
+            &:hover
+                color: #DC3B53
+
+    .container
+        transition: top ease 0.5s
+        width: 100vw
+        height: 100vh
+        background: black
+        color: white
+        top: -100vh
+        z-index: 99
+        left: 0
+        position: fixed
+        max-width: 100vw
+        &.is-active
+            top: 0
+            + .hamburger
+                position: fixed
+                left: calc(50% - 6px)
+                top: 80px
+                transform: rotate(180deg)
+                .bar
+                    background: white
+
+.hamburger
+    display: inline-block
+    margin: auto
+    cursor: pointer
+    position: relative
+    z-index: 120
+    min-height: 28.5px
+    left: 9px
+    transition: transform ease 0.2s
+    transform: rotate(0deg)
+    .bar
+        transition: all ease 0.2s
+        position: relative
+        top: 0
+        left: 0
+        right: auto
+        opacity: 1
+        width: 35.29px
+        height: 5px
+        background: #3F3F3F
+        margin-bottom: 4.5px
+        transform: rotate(0)
+    &:hover
+        .bar
+            &:nth-child(1)
+                transform: rotate(45deg)
+                top: 10px
+                left: -11px
+            &:nth-child(2)
+                transform: rotate(-45deg)
+                right: -11px
+                left: auto
+            &:nth-child(3)
+                opacity: 0
+                top:20px
+.lang
+    width: 48px
+    height: 48px
+    text-align: center
+    font-weight: bold
+    text-transform: uppercase
+    background: black
+    color: white
+    display: inline-block
+    margin-left: 13px
+    font-size: 1.125rem
+    padding: 10px 0
+    cursor: pointer
+    z-index: 120
+    vertical-align: top
+    &-lv, &-en
+        float: right
+    &.is-active
+        background: #DC3B53
+        @include mobile
+            display: none
+    &-switcher
+        position: absolute
+        top: -25px
+        right: 0
+        @include mobile
+            text-align: left
+            width: 100%
+#inverter        
+    @extend .lang
+    img
+        display: inline-block
+        max-width: 100%
+        max-height: 100%
+@include mobile
+    .menu
+        margin-top: 50px

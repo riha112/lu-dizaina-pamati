@@ -1,0 +1,22 @@
+.grid
+    .item-3
+        max-width: 25%
+    .item-4
+        max-width: 33.33%
+    .item-6
+        max-width: 50%
+    .item-4, .item-6, .item-3
+        width: 100%
+        float: left
+    .break, &:after
+        clear: both
+        content: ""
+        display: block
+
+@include mobile
+    .grid
+        .item-3
+            max-width: 50%
+        .item-6
+            max-width: 100%
+            float: none

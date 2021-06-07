@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        title= "University of Latvia"
+        meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/theme.css")
+    body.university
+        .page-wrapper
+            include ./jade-components/menu.jade
+            img.bg-shadow(src="./img/home/bg_shadow.png")
+            img.bg-shadow(src="./img/home/bg_shadow.png")
+            .popup
+                .popup-data
+                    img.popup-img(src="./img/university/sorry.png")
+                    .popup-content
+                        .popup-title.jst Sorry!
+                        .popup-text.jst The page you are trying to access is still under construction.
+                        a.btn.popup-btn.white.jst(href="./index.html") Return To Homepage
+                        .popup-sub-text.jst The page should be up and running in the next few weeks. You can subscribe to our newsletter to get newes news about page
+            .container 
+                .hero
+                    .hero-container
+                        .hero-content.center
+                            h1.hero-title.jst University Of Latvia
+                            p.hero-text.jst The goal of our journey - University of Latvia - the place where I'm studying for my bachelors degree in software engineering...
+                include ./jade-components/footer.jade
+        include ./jade-components/frame.jade

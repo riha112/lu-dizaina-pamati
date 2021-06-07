@@ -1,0 +1,68 @@
+doctype html
+html(lang="en")
+    head
+        title= "Home Page | Welcome"
+        meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/theme.css")
+    body.home
+        .page-wrapper
+            include ./jade-components/menu.jade
+            img.bg-shadow(src="./img/home/bg_shadow.png")
+            img.bg-shadow(src="./img/home/bg_shadow.png")
+            .block
+                .block-one
+                .block-two
+            img.road(src="./img/home/home_road.png")
+            .container 
+                .hero
+                    .hero-container.grid
+                        .hero-content.item-6
+                            h1.hero-title.jst Hello guest
+                            p.hero-text.jst Welcome to my website. This website was developed with intent of informing its audience with my daily journey from home to university. In this website you will be able to find some of the most notable landmarks.
+                            a.btn.hero-button.white.jst More
+                main
+                    .text-follow-journey.jst Follow my journey
+                    section.road-stop.mx-50.number-left.stop-home
+                        img.road-stop-art.road-stop-art-home(src="./img/home/home_art_stop_home.png")
+                        .road-stop-number 1
+                        .road-stop-content
+                            h2.road-stop-title.jst Start of the journey
+                            p.road-stop-text.jst My journey to university starts in bus stop - "Jaunciema 1. šķērslīnija". There I usually wait for my choice of transportation - taxi. To order / reserve it I usaly use application "Bolt".
+                            h3.road-stop-sub-section.jst Alternative
+                            p.road-stop-sub-section-text.jst Other people usually use bus nr 11. to ride to the center. It departs every 30min and takes around 50min to arrive to its destination.
+                    section.road-stop.mx-50.number-right.align-right.stop-lake
+                        .road-stop-number 2
+                        .road-stop-content
+                            h2.road-stop-title.jst Lake Kisezers
+                            p.road-stop-text.jst First landmark to be seen is the lake - Kisezers, which is the largest lake in Riga and 10th largest lake in Latvia.
+                        img.road-stop-art-static-lake(src="./img/home/home_art_stop_lake.png")
+                    section.road-stop.mx-50.number-left.stop-sarkandaugava
+                        img.road-stop-art.road-stop-art-tower(src="./img/home/home_art_stop_tower.png")
+                        .road-stop-number 3
+                        .road-stop-content
+                            h2.road-stop-title.jst Sarkandaugava
+                            p.road-stop-text.jst Sarkandaugava is one of the Rigas cities. This city is rich with history and beautiful places. Driving through this city every day, I have the opportunity to see places like: Park, History Museum, Port, Golf Club and others.
+                            h3.road-stop-sub-section.jst Museum of History
+                            p.road-stop-sub-section-text.jst History Museum - a famous red house, the most beautiful sight in Sarkandaugava...
+                            a.btn.jst(href="./sarkandaugava.html") Read More
+                    section.road-stop.mx-50.number-left.align-right.stop-zoo
+                        img.road-stop-art.road-stop-art-zoo(src="./img/home/home_art_stop_zoo.png")
+                        .road-stop-number 4
+                        .road-stop-content
+                            h2.road-stop-title.jst Rīgas Zoodārzs
+                            p.road-stop-text.jst One of the most popular places in Riga, and my favorite place to spend time when there is nothing to do. Here you can see more than 120 different animals, from marine animals to tropical amphibians. 
+                            a.btn.jst(href="./zoo.html") Read More
+                    section.road-stop.mx-50.stop-monument
+                        img.road-stop-art.road-stop-art-monument(src="./img/home/home_art_stop_monument.png")
+                        .road-stop-content
+                            .road-stop-number 5
+                            h2.road-stop-title.jst Monument Of Freedom
+                            p.road-stop-text.jst The Freedom Monument is located in Riga, Latvia, honouring soldiers killed during the Latvian War of Independence. It is considered an important symbol of the freedom, independence, and sovereignty of Latvia.
+                            a.btn.jst(href="./monument-of-freedom.html") Read More
+                    section.road-stop.stop-university
+                        .road-stop-number.text end
+                        img.road-stop-art.road-stop-art-university(src="./img/home/home_art_stop_university.png")
+
+                include ./jade-components/footer.jade
+        include ./jade-components/frame.jade

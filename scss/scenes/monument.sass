@@ -1,0 +1,72 @@
+.monument
+    .hero-content.center
+        max-width: 1000px
+    .block
+        &-one
+            transform: translateX(-50%) rotate(6.23deg)
+            top: 1310.38px
+            background: #67ADC3
+    .line
+        position: absolute
+        left: calc(50% - 150px)
+        top: 461px
+        transform: translateX(-50%)
+        z-index: -3
+    .hero
+        &:before
+            transform: rotate(-1.71deg)
+        &:after
+            background: linear-gradient(103.56deg, #67ADC3 15.86%, #395E96 82.46%)
+            transform: rotate(1.52deg)
+    .monument
+        position: absolute
+        left: calc(50% - -35px)
+        top: 507px
+        margin: 0
+        display: block
+        transform: translateX(-50%)
+        z-index: 5
+    main
+        text-align: center
+        max-width: 1080px
+        margin: auto
+    .history-events
+        z-index: 15
+        position: relative
+    .event
+        max-width: 406px
+        text-align: center
+        color: black
+        display: inline-block
+        min-height: 270px
+        margin: 4rem 1rem 1rem
+        &-wrapper
+            &:nth-child(4)
+                margin-top: -7rem
+                margin-bottom: -7rem
+            &:nth-child(even)
+                text-align: right
+                .event
+                    transform: rotate(1.97deg)
+            &:nth-child(odd)
+                text-align: left
+                .event
+                    transform: rotate(-1.97deg)
+        &-title 
+            font-size: 28px
+            line-height: 42px
+            margin: 1.5rem 0 1rem
+            font-weight: bold
+
+@include mobile
+    .monument
+        .footer
+            z-index: 5
+        .event
+            margin-bottom: 0
+            margin-top: 0
+            &-wrapper
+                margin-bottom: 4rem
+                &:nth-child(4)
+                    margin-top: 0
+                    margin-bottom: 4rem

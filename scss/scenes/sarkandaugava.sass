@@ -1,0 +1,92 @@
+.sarkandaugava
+    &.invert
+        .foot
+            display: block
+    .steps
+        position: absolute
+        left: 50%
+        top: 1132.95px
+        transform: translateX(-621px)
+    .block
+        &-one
+            background: #C14E43
+            transform: translateX(-50%) rotate(-6.23deg)
+            top: 1310px
+    .hero
+        &::before
+            transform: rotate(-1.71deg)
+        &::after
+            background: linear-gradient(103.56deg, #CF5F4F 15.86%, #9E2525 82.46%)
+            transform: rotate(1.52deg)
+
+.road-stop-data
+    &.white
+        color: white
+
+.stop
+    &-sarkandaugava
+        &-tower
+            .road-stop-data
+                transform: rotate(-0.96deg)
+                left: 42%
+                position: relative
+                top: 65px
+        &-museum
+            margin-top: 221px
+            margin-bottom: 522px
+            .road-stop-data
+                transform: rotate(-0.96deg)
+                display: inline-block
+                text-align: right
+                position: relative
+                top: 264px
+                right: -44px
+
+.road-stop-art
+    &-sarkandaugava
+        &-tower
+            top: -165px
+            left: 16.5%
+        &-museum
+            left: 40%
+            transform: none
+
+
+@include mobile
+    .sarkandaugava
+        .steps
+            z-index: -1
+            top: 700px
+        .block-one
+            top: 800px
+        .road-stop
+            &-data
+                padding: 10px
+            &-text
+                font-size: 1rem
+                line-height: 1.5rem
+    .road-stop-art
+        &-sarkandaugava
+            &-tower
+                top: auto
+                left: 50%
+                max-width: 85%
+                bottom: -190px
+            &-museum
+                right: -90%
+                transform: none
+                left: auto
+                max-width: 180%
+                top: auto
+                bottom: -300px
+    .stop
+        &-sarkandaugava
+            &-tower
+                .road-stop-data
+                    left: 0
+            &-museum
+                margin-top: 50px
+                margin-bottom: 250px
+                .road-stop-data
+                    top: 100px
+                    right: 0

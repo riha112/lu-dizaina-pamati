@@ -1,0 +1,208 @@
+.zoo
+    .mobile
+        display: none !important
+    .scorpion
+        position: absolute
+        z-index: -1
+        max-width: 150px
+        &-one
+            left: 100px
+            top: 200px
+            transform: rotate(20deg)
+            max-width: 180px
+        &-two
+            left: 50%
+            top: 700px
+            transform: rotate(-20deg)
+        &-three
+            left: auto
+            right: 200px
+            top: 1600px
+            transform: rotate(190deg)
+            max-width: 200px
+        &-four
+            left: 50px
+            top: 2000px
+            transform: rotate(80deg)
+            max-width: 130px
+    .snake
+        position: absolute
+        z-index: 2
+        right: 120px
+        bottom: 0
+    .branch
+        &-three
+            position: absolute
+            bottom: -210px
+            left: 120px
+            &-holder
+                position: relative
+        &-two
+            position: absolute
+            right: -120px
+            top: 1255px
+        &-one
+            left: -179px
+            top: 735px
+            position: absolute
+            
+    .foot
+        position: absolute
+        left: 50%
+        top: 669px
+        transform: translateX(-662px)
+        z-index: -5
+    main
+        margin-top: 4rem
+    .carousel
+        &-wrapper
+            max-width: 837px
+            margin: auto
+            text-align: center
+            margin-top: 4rem
+    .contacts
+        text-align: center
+        &-info
+            &-wrapper
+                font-size: 24px
+                color: black
+                display: inline-block
+                max-width: 450px
+                margin-bottom: 5rem
+            &-address
+                font-weight: bold
+                margin: 5rem 0 2rem
+        .info
+            & > div
+                display: inline-block
+            .data
+                font-weight: bold
+                color: #DC3B53
+    .title-wrapper
+        &.right
+            text-align: right
+            .zoo-title
+                transform: rotate(7deg)
+        &.left
+            text-align: left
+        &.center
+            text-align: center
+    &-title
+        display: inline-block
+    .hero-content.center
+        max-width: 1000px
+    .block
+        &-one
+            top: 1310.38px
+            background: #AD6251
+            transform: translateX(-50%) rotate(6.23deg)
+    .hero
+        &:before
+            background: #F3F3F3
+            transform: rotate(-1.71deg)
+        &:after
+            background: linear-gradient(103.56deg, #C38367 15.86%, #963E39 82.46%)
+            transform: rotate(1.52deg)
+    .animal
+        &-title
+            font-weight: bold
+            font-family: $ff-poppins
+            font-size: 24px
+            line-height: 114%
+            color: #DC5555
+        &-latin
+            font-family: $ff-poppins
+    .admission
+        color: white
+        max-width: 1043px
+        margin: 9rem auto
+        &-image
+            &-adult
+                margin-right: 2.5rem
+            &-children
+                margin-left: 2.5rem
+        &-ticket
+            &>div
+                display: inline-block
+            &.children
+                text-align: right
+                .admission-price
+                    color: #E87CAF
+            &.adult
+                margin-top: 4rem
+                margin-bottom: 7.5rem
+                .admission-price
+                    color: #FDB638
+        &-title
+            font-family: $ff-poppins
+            font-weight: bold
+            font-size: 36px
+            line-height: 54px
+            color: #F1F1F1
+        &-text
+            font-size: 14px
+            line-height: 19px
+            max-width: 400px
+            display: inline-block
+            color: #DADADA
+        &-price
+            font-weight: bold
+            font-size: 36px
+            font-family: $ff-poppins
+            margin-top: 1rem
+            span
+                font-weight: normal
+
+
+@include mobile
+    .zoo 
+        .animal
+            &-image
+                max-width: 100%
+            &-title
+                font-size: 20px
+        .desktop
+            display: none !important
+        .mobile
+            display: block !important
+        .carousel
+            &-item
+                &:nth-child(2)
+                    margin-bottom: 2rem
+                &:nth-child(3)
+                    clear: both
+        .admission
+            margin-top: 4rem
+            margin-bottom: 3rem
+            &-image
+                &-adult, &-children
+                    max-width: 100%
+                    margin-left: 0
+                    margin-right: 0
+            &-ticket
+                &.adult
+                    text-align: center
+                    margin-bottom: 3rem
+                &.children
+                    text-align: center
+                    .admission-title, .admission-text
+                        color: black
+        .contacts-info
+            &-wrapper
+                font-size: 18px
+            &-address
+                margin-top: 2rem
+        .snake
+            bottom: -25px
+            max-width: 30vw
+            right: 20px
+        .branch
+            &-one, &-two
+                max-width: 100vw
+            &-three
+                bottom: -26vw
+                left: 0
+                max-width: 47vw
+        .title-wrapper
+            &, &.left, &.right
+                text-align: center

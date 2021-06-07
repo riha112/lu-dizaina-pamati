@@ -1,0 +1,1413 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700,800&display=swap");
+.grid .item-3 {
+  max-width: 25%;
+}
+.grid .item-4 {
+  max-width: 33.33%;
+}
+.grid .item-6 {
+  max-width: 50%;
+}
+.grid .item-4, .grid .item-6, .grid .item-3 {
+  width: 100%;
+  float: left;
+}
+.grid .break, .grid:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+@media (max-width: 720px) {
+  .grid .item-3 {
+    max-width: 50%;
+  }
+  .grid .item-6 {
+    max-width: 100%;
+    float: none;
+  }
+}
+body {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #949494;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  background: #7E52FD;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 100px;
+  font-size: 1.5em;
+  padding: 0.45em 1em;
+  margin-top: 0.8em;
+  min-width: 205px;
+  text-align: left;
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 5px 10px;
+  display: inline-block;
+  transition: all ease 0.2s;
+  border-radius: 40px;
+  border: 1px solid black;
+  color: black;
+  min-width: 77px;
+  min-height: 30px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0);
+  font-size: 12px;
+  text-decoration: none;
+}
+.btn:hover {
+  cursor: pointer;
+  background: black;
+  color: white;
+}
+.btn.white {
+  border-color: white;
+  color: white;
+}
+.btn.white:hover {
+  background: white;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 1rem;
+  margin: auto;
+}
+@media (max-width: 720px) {
+  .container {
+    padding: 1rem 20px 0;
+  }
+}
+
+.mx-50 {
+  max-width: 50%;
+}
+@media (max-width: 720px) {
+  .mx-50 {
+    max-width: 100%;
+  }
+}
+
+.page-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer {
+  position: relative;
+  width: 1322px;
+  max-width: 100%;
+  color: white;
+  margin: auto;
+  clear: both;
+}
+.footer > * {
+  position: relative;
+  z-index: 1;
+}
+.footer h2 {
+  font-family: Sitka, "Time New Romans", serif;
+  font-size: 2.25rem;
+  margin-bottom: 13px;
+}
+.footer-container {
+  padding: 35px 0 10px;
+  max-width: 865px;
+  margin: auto;
+}
+.footer::before {
+  z-index: 0;
+  content: "";
+  display: block;
+  background: black;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-3.11deg);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.footer .lu-logo {
+  margin-top: 13px;
+}
+.footer-navigation-content a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+.footer-navigation-content a:not(:last-child):after {
+  content: " | ";
+  display: inline-block;
+}
+.footer-navigation-content p {
+  font-size: 14px;
+  margin-top: 0;
+  max-width: 322px;
+  opacity: 0.8;
+}
+.footer-contact-sub-content {
+  opacity: 0.8;
+  font-size: 12px;
+  margin-top: 13px;
+}
+.footer-info {
+  font-size: 14px;
+}
+.footer-info-label {
+  display: inline-block;
+  opacity: 0.8;
+}
+.footer-info-data {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.copyright {
+  width: 200%;
+  padding: 39px 10px;
+  font-size: 0.9rem;
+  position: relative;
+  left: -50%;
+  text-align: center;
+  background: black;
+  min-height: 100px;
+}
+
+@media (max-width: 720px) {
+  .footer {
+    text-align: center;
+  }
+  .footer-contact {
+    margin: 3rem 0 2rem;
+  }
+  .footer-contact-sub-content {
+    font-size: 10px;
+  }
+  .footer h2 {
+    font-size: 1.8rem;
+    margin: 20px 10px;
+  }
+  .footer-navigation-content p {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .footer-contact-content {
+    padding: 0 10px;
+  }
+  .footer-info {
+    font-size: 13px;
+  }
+
+  .copyright {
+    padding: 29px 5px;
+    font-size: 0.6rem;
+    min-height: 50px;
+  }
+}
+.hero {
+  max-width: 1300px;
+  min-height: 530px;
+  margin: auto;
+  position: relative;
+  padding: 145px 10px 80px;
+}
+.hero::before, .hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.hero::before {
+  background: #F3F3F3;
+  transform: rotate(0.4deg);
+  z-index: -5;
+}
+.hero::after {
+  background: black;
+  transform: rotate(-1.36deg);
+  z-index: -1;
+}
+.hero-container {
+  max-width: 1000px;
+  margin: auto;
+}
+.hero-content {
+  max-width: 330px;
+  color: white;
+}
+.hero-content.center {
+  text-align: center;
+  margin: auto;
+  max-width: 530px;
+}
+.hero-content.center .hero-title:after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero-content.center .hero-text {
+  max-width: 350px;
+  margin: auto;
+}
+.hero-title {
+  font-family: Sitka, "Time New Romans", serif;
+  font-size: 4rem;
+  margin-top: 0;
+}
+.hero-title:after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 42px;
+  background: white;
+  position: relative;
+  top: 10px;
+}
+.hero-text {
+  margin-top: 0;
+  max-width: 250px;
+  font-size: 0.725rem;
+}
+
+@media (max-width: 720px) {
+  .hero {
+    min-height: 400px;
+    padding: 100px 10px 40px;
+  }
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-content {
+    text-align: center;
+    margin: auto;
+    max-width: 530px;
+  }
+  .hero-content .hero-title:after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .hero-content .hero-text {
+    max-width: 350px;
+    margin: auto;
+  }
+}
+.home .text-follow-journey {
+  max-width: 525px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 79px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  transform: rotate(4.4deg) translateX(-50%);
+  position: absolute;
+  left: calc(50% + 352px);
+  width: 100%;
+  top: -160px;
+}
+.home .block-one {
+  top: 1220px;
+}
+.home .block-two {
+  top: 2385px;
+  height: 488px;
+  transform: translateX(-50%) rotate(6.41deg);
+}
+.home .road {
+  position: absolute;
+  left: calc(50% + 42px);
+  top: 554px;
+  transform: translateX(-50%);
+  z-index: -3;
+}
+.home main {
+  max-width: 1236px;
+  margin: 103px auto auto;
+  padding: 0 10px;
+  position: relative;
+}
+.home .hero::after {
+  background: linear-gradient(103.56deg, #67C3B5 15.86%, #399688 82.46%);
+}
+
+.road-stop {
+  color: black;
+  position: relative;
+  margin-bottom: 100px;
+}
+.road-stop.align-right {
+  float: right;
+}
+.road-stop.align-right::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.road-stop-art {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  top: -100px;
+}
+.road-stop-art-home {
+  left: calc(50% + 24px);
+  top: -108px;
+}
+.road-stop-art-static-lake {
+  position: relative;
+  left: 74px;
+  top: -40px;
+  z-index: -100;
+}
+.road-stop-art-tower {
+  top: 30px;
+  left: 20%;
+}
+.road-stop-art-zoo {
+  top: -357px;
+  left: -6px;
+  transform: none;
+}
+.road-stop-art-monument {
+  left: 0;
+  transform: translateX(-25%);
+  z-index: -1;
+  top: auto;
+  bottom: -237px;
+}
+.road-stop-art-university {
+  bottom: -304px;
+  top: auto;
+  z-index: 8;
+  left: 97%;
+}
+.road-stop-number {
+  width: 72px;
+  height: 72px;
+  background: #DC3B53;
+  font-family: Rockwell;
+  font-weight: bold;
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  position: relative;
+  line-height: 72px;
+}
+.road-stop-number.text {
+  width: auto;
+  padding: 0 20px;
+  display: inline-block;
+}
+.road-stop-number::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #DC3B53;
+  opacity: 0.15;
+  z-index: -1;
+}
+.road-stop-title {
+  margin-bottom: 8px;
+}
+.road-stop-text {
+  font-size: 0.875rem;
+  line-height: 19px;
+  max-width: 450px;
+  margin-top: 0;
+}
+.road-stop-sub-section {
+  color: #DC3B53;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+.road-stop-sub-section-text {
+  margin-top: 0;
+  font-size: 12px;
+}
+.road-stop.number-left::after, .road-stop.number-right::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.road-stop.number-left .road-stop-number, .road-stop.number-right .road-stop-number {
+  display: inline-block;
+  float: left;
+  margin-right: 27px;
+}
+.road-stop.number-left .road-stop-content, .road-stop.number-right .road-stop-content {
+  display: inline-block;
+  width: calc(100% - 72px - 27px);
+  float: left;
+}
+.road-stop.number-right .road-stop-content {
+  text-align: right;
+}
+.road-stop.number-right .road-stop-number {
+  margin-right: 0;
+  margin-left: 27px;
+}
+.road-stop.number-right .road-stop-number, .road-stop.number-right .road-stop-content {
+  float: right;
+}
+
+.stop-sarkandaugava {
+  position: relative;
+  top: 161px;
+}
+.stop-monument {
+  margin-bottom: 370px;
+  margin-top: 421px;
+}
+.stop-monument .road-stop-content {
+  padding-left: calc(50% - 113px);
+}
+.stop-lake {
+  margin-top: 72px;
+  max-width: 400px;
+}
+.stop-zoo {
+  top: 27px;
+  max-width: 602px;
+  width: 100%;
+}
+.stop-zoo .road-stop-content {
+  max-width: 351px;
+}
+.stop-university {
+  margin-bottom: 655px;
+}
+.stop-university .road-stop-number {
+  position: absolute;
+  right: 10%;
+  z-index: 9;
+  top: 105px;
+  transform: rotate(9deg);
+}
+
+.block-one, .block-two {
+  width: 200vw;
+  max-width: 1960px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-6.23deg);
+  position: absolute;
+  z-index: -999;
+  height: 750px;
+  background: #67C3B5;
+  box-shadow: inset 14px 4px 93px rgba(116, 116, 116, 0.25);
+}
+
+@media (max-width: 720px) {
+  .road-stop-number {
+    font-size: 2.5rem;
+    height: auto;
+    min-height: 55px;
+    line-height: 55px;
+  }
+  .road-stop-number:not(.text) {
+    width: 55px;
+  }
+
+  .home main {
+    margin: 0 auto auto;
+  }
+  .home .text-follow-journey {
+    text-align: center;
+    left: 50%;
+    position: relative;
+    top: -35px;
+    font-size: 49px;
+    line-height: 56px;
+  }
+  .home .stop-lake {
+    margin-top: -33px;
+  }
+  .home .stop-sarkandaugava {
+    top: 50px;
+  }
+  .home .stop-monument .road-stop-content {
+    padding-left: 0;
+    top: 100px;
+    position: relative;
+  }
+  .home .road {
+    display: none;
+  }
+  .home .road-stop {
+    clear: both;
+  }
+  .home .road-stop-art-home, .home .road-stop-art-static-lake, .home .road-stop-art-tower, .home .road-stop-art-zoo, .home .road-stop-art-monument, .home .road-stop-art-university {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -7;
+    top: -100px;
+  }
+  .home .road-stop-art-home {
+    z-index: -2;
+  }
+  .home .road-stop-art-university {
+    max-width: 200%;
+    right: -200%;
+    left: auto;
+    bottom: -69vw;
+    top: auto;
+    z-index: -1;
+  }
+}
+.sarkandaugava.invert .foot {
+  display: block;
+}
+.sarkandaugava .steps {
+  position: absolute;
+  left: 50%;
+  top: 1132.95px;
+  transform: translateX(-621px);
+}
+.sarkandaugava .block-one {
+  background: #C14E43;
+  transform: translateX(-50%) rotate(-6.23deg);
+  top: 1310px;
+}
+.sarkandaugava .hero::before {
+  transform: rotate(-1.71deg);
+}
+.sarkandaugava .hero::after {
+  background: linear-gradient(103.56deg, #CF5F4F 15.86%, #9E2525 82.46%);
+  transform: rotate(1.52deg);
+}
+
+.road-stop-data.white {
+  color: white;
+}
+
+.stop-sarkandaugava-tower .road-stop-data {
+  transform: rotate(-0.96deg);
+  left: 42%;
+  position: relative;
+  top: 65px;
+}
+.stop-sarkandaugava-museum {
+  margin-top: 221px;
+  margin-bottom: 522px;
+}
+.stop-sarkandaugava-museum .road-stop-data {
+  transform: rotate(-0.96deg);
+  display: inline-block;
+  text-align: right;
+  position: relative;
+  top: 264px;
+  right: -44px;
+}
+
+.road-stop-art-sarkandaugava-tower {
+  top: -165px;
+  left: 16.5%;
+}
+.road-stop-art-sarkandaugava-museum {
+  left: 40%;
+  transform: none;
+}
+
+@media (max-width: 720px) {
+  .sarkandaugava .steps {
+    z-index: -1;
+    top: 700px;
+  }
+  .sarkandaugava .block-one {
+    top: 800px;
+  }
+  .sarkandaugava .road-stop-data {
+    padding: 10px;
+  }
+  .sarkandaugava .road-stop-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .road-stop-art-sarkandaugava-tower {
+    top: auto;
+    left: 50%;
+    max-width: 85%;
+    bottom: -190px;
+  }
+  .road-stop-art-sarkandaugava-museum {
+    right: -90%;
+    transform: none;
+    left: auto;
+    max-width: 180%;
+    top: auto;
+    bottom: -300px;
+  }
+
+  .stop-sarkandaugava-tower .road-stop-data {
+    left: 0;
+  }
+  .stop-sarkandaugava-museum {
+    margin-top: 50px;
+    margin-bottom: 250px;
+  }
+  .stop-sarkandaugava-museum .road-stop-data {
+    top: 100px;
+    right: 0;
+  }
+}
+.menu {
+  margin: 77px 46px 15px;
+  text-align: center;
+  position: relative;
+  min-height: 33.5px;
+}
+.menu-items {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 26px;
+  top: 150px;
+  display: inline-block;
+}
+.menu-items a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  display: block;
+}
+.menu-items a:hover {
+  color: #DC3B53;
+}
+.menu .container {
+  transition: top ease 0.5s;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  color: white;
+  top: -100vh;
+  z-index: 99;
+  left: 0;
+  position: fixed;
+  max-width: 100vw;
+}
+.menu .container.is-active {
+  top: 0;
+}
+.menu .container.is-active + .hamburger {
+  position: fixed;
+  left: calc(50% - 6px);
+  top: 80px;
+  transform: rotate(180deg);
+}
+.menu .container.is-active + .hamburger .bar {
+  background: white;
+}
+
+.hamburger {
+  display: inline-block;
+  margin: auto;
+  cursor: pointer;
+  position: relative;
+  z-index: 120;
+  min-height: 28.5px;
+  left: 9px;
+  transition: transform ease 0.2s;
+  transform: rotate(0deg);
+}
+.hamburger .bar {
+  transition: all ease 0.2s;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: auto;
+  opacity: 1;
+  width: 35.29px;
+  height: 5px;
+  background: #3F3F3F;
+  margin-bottom: 4.5px;
+  transform: rotate(0);
+}
+.hamburger:hover .bar:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+  left: -11px;
+}
+.hamburger:hover .bar:nth-child(2) {
+  transform: rotate(-45deg);
+  right: -11px;
+  left: auto;
+}
+.hamburger:hover .bar:nth-child(3) {
+  opacity: 0;
+  top: 20px;
+}
+
+.lang, #inverter {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: black;
+  color: white;
+  display: inline-block;
+  margin-left: 13px;
+  font-size: 1.125rem;
+  padding: 10px 0;
+  cursor: pointer;
+  z-index: 120;
+  vertical-align: top;
+}
+.lang-lv, .lang-en {
+  float: right;
+}
+.lang.is-active, .is-active#inverter {
+  background: #DC3B53;
+}
+@media (max-width: 720px) {
+  .lang.is-active, .is-active#inverter {
+    display: none;
+  }
+}
+.lang-switcher {
+  position: absolute;
+  top: -25px;
+  right: 0;
+}
+@media (max-width: 720px) {
+  .lang-switcher {
+    text-align: left;
+    width: 100%;
+  }
+}
+
+#inverter img {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (max-width: 720px) {
+  .menu {
+    margin-top: 50px;
+  }
+}
+.frame > div {
+  position: fixed;
+  background: black;
+  z-index: 1000;
+}
+.frame-left, .frame-right {
+  width: 30px;
+  height: 100vh;
+  top: 0;
+}
+.frame-left {
+  left: 0;
+}
+.frame-right {
+  right: 0;
+}
+.frame-top, .frame-bottom {
+  height: 30px;
+  width: 100vw;
+  left: 0;
+}
+.frame-top {
+  top: 0;
+}
+.frame-bottom {
+  bottom: 0;
+}
+
+@media (max-width: 720px) {
+  .frame-left, .frame-right {
+    width: 20px;
+  }
+  .frame-top, .frame-bottom {
+    height: 20px;
+  }
+}
+.university .lang-switcher {
+  z-index: 99;
+}
+.university .hamburger .bar {
+  background: white;
+}
+.university .hero {
+  margin-bottom: 200px;
+}
+.university .hero::before {
+  transform: rotate(-1.71deg);
+}
+.university .hero::after {
+  background: linear-gradient(103.56deg, #4F73CF 15.86%, #25409E 82.46%);
+  transform: rotate(1.52deg);
+}
+
+.popup {
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 90;
+}
+.popup-img {
+  max-height: 23vh;
+}
+.popup-title {
+  font-size: 70px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.popup-text {
+  font-size: 26px;
+  font-weight: bold;
+}
+.popup-sub-text {
+  font-size: 14px;
+  opacity: 0.6;
+}
+.popup-btn {
+  border-width: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 10px 20px;
+}
+.popup-data {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  color: white;
+}
+
+.map .block-one {
+  background: #AC5597;
+  top: 1310.38px;
+  transform: translateX(-50%) rotate(6.23deg);
+}
+.map-info {
+  max-width: 1123px;
+  margin: auto auto 15rem;
+  position: relative;
+}
+.map-info-lens {
+  position: absolute;
+  bottom: -307px;
+  right: -124px;
+  z-index: -1;
+}
+.map-info-one {
+  text-align: left;
+}
+.map-info-two {
+  text-align: right;
+}
+.map-info-title {
+  color: #FAFF00;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 54px;
+}
+.map-info-text {
+  font-size: 22px;
+  line-height: 30px;
+  color: white;
+}
+.map main {
+  text-align: center;
+}
+.map-title {
+  margin-top: 5rem;
+  margin-bottom: 5.5rem;
+}
+.map .line {
+  position: absolute;
+  left: calc(50% + 171px);
+  top: 390px;
+  transform: translateX(-50%);
+  z-index: -3;
+}
+.map .hero::after {
+  background: linear-gradient(103.56deg, #C36799 15.86%, #893996 82.46%);
+}
+.map-body {
+  max-width: 1161px;
+  max-height: 664px;
+  width: 100%;
+  height: calc(100vw / 1.75113122);
+  position: relative;
+  transform: rotate(1.66deg);
+  margin-bottom: 5.5rem;
+  display: inline-block;
+}
+.map-body:after {
+  outline: 26px solid #000000;
+  outline-offset: -26px;
+  pointer-events: none;
+  background: url("../img/map/map.png");
+  background-size: cover;
+}
+.map-body:after, .map-body:before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.map-body:before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(143, 143, 143, 0.4);
+  transform: rotate(-4deg);
+}
+
+@media (max-width: 720px) {
+  .map .line {
+    top: 250px;
+  }
+  .map .block-one {
+    top: 800px;
+  }
+  .map-info {
+    margin-bottom: 5rem;
+  }
+  .map-info-one, .map-info-two {
+    text-align: center;
+  }
+  .map-info-lens {
+    max-width: 140%;
+    bottom: -200px;
+  }
+  .map-info-title {
+    font-size: 30px;
+  }
+  .map-info-text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .map-title {
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+  }
+  .map-body {
+    margin-bottom: 2rem;
+  }
+  .map-body:after {
+    outline: 16px solid #000000;
+    outline-offset: -16px;
+  }
+}
+.monument .hero-content.center {
+  max-width: 1000px;
+}
+.monument .block-one {
+  transform: translateX(-50%) rotate(6.23deg);
+  top: 1310.38px;
+  background: #67ADC3;
+}
+.monument .line {
+  position: absolute;
+  left: calc(50% - 150px);
+  top: 461px;
+  transform: translateX(-50%);
+  z-index: -3;
+}
+.monument .hero:before {
+  transform: rotate(-1.71deg);
+}
+.monument .hero:after {
+  background: linear-gradient(103.56deg, #67ADC3 15.86%, #395E96 82.46%);
+  transform: rotate(1.52deg);
+}
+.monument .monument {
+  position: absolute;
+  left: calc(50% - -35px);
+  top: 507px;
+  margin: 0;
+  display: block;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+.monument main {
+  text-align: center;
+  max-width: 1080px;
+  margin: auto;
+}
+.monument .history-events {
+  z-index: 15;
+  position: relative;
+}
+.monument .event {
+  max-width: 406px;
+  text-align: center;
+  color: black;
+  display: inline-block;
+  min-height: 270px;
+  margin: 4rem 1rem 1rem;
+}
+.monument .event-wrapper:nth-child(4) {
+  margin-top: -7rem;
+  margin-bottom: -7rem;
+}
+.monument .event-wrapper:nth-child(even) {
+  text-align: right;
+}
+.monument .event-wrapper:nth-child(even) .event {
+  transform: rotate(1.97deg);
+}
+.monument .event-wrapper:nth-child(odd) {
+  text-align: left;
+}
+.monument .event-wrapper:nth-child(odd) .event {
+  transform: rotate(-1.97deg);
+}
+.monument .event-title {
+  font-size: 28px;
+  line-height: 42px;
+  margin: 1.5rem 0 1rem;
+  font-weight: bold;
+}
+
+@media (max-width: 720px) {
+  .monument .footer {
+    z-index: 5;
+  }
+  .monument .event {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .monument .event-wrapper {
+    margin-bottom: 4rem;
+  }
+  .monument .event-wrapper:nth-child(4) {
+    margin-top: 0;
+    margin-bottom: 4rem;
+  }
+}
+.zoo .mobile {
+  display: none !important;
+}
+.zoo .scorpion {
+  position: absolute;
+  z-index: -1;
+  max-width: 150px;
+}
+.zoo .scorpion-one {
+  left: 100px;
+  top: 200px;
+  transform: rotate(20deg);
+  max-width: 180px;
+}
+.zoo .scorpion-two {
+  left: 50%;
+  top: 700px;
+  transform: rotate(-20deg);
+}
+.zoo .scorpion-three {
+  left: auto;
+  right: 200px;
+  top: 1600px;
+  transform: rotate(190deg);
+  max-width: 200px;
+}
+.zoo .scorpion-four {
+  left: 50px;
+  top: 2000px;
+  transform: rotate(80deg);
+  max-width: 130px;
+}
+.zoo .snake {
+  position: absolute;
+  z-index: 2;
+  right: 120px;
+  bottom: 0;
+}
+.zoo .branch-three {
+  position: absolute;
+  bottom: -210px;
+  left: 120px;
+}
+.zoo .branch-three-holder {
+  position: relative;
+}
+.zoo .branch-two {
+  position: absolute;
+  right: -120px;
+  top: 1255px;
+}
+.zoo .branch-one {
+  left: -179px;
+  top: 735px;
+  position: absolute;
+}
+.zoo .foot {
+  position: absolute;
+  left: 50%;
+  top: 669px;
+  transform: translateX(-662px);
+  z-index: -5;
+}
+.zoo main {
+  margin-top: 4rem;
+}
+.zoo .carousel-wrapper {
+  max-width: 837px;
+  margin: auto;
+  text-align: center;
+  margin-top: 4rem;
+}
+.zoo .contacts {
+  text-align: center;
+}
+.zoo .contacts-info-wrapper {
+  font-size: 24px;
+  color: black;
+  display: inline-block;
+  max-width: 450px;
+  margin-bottom: 5rem;
+}
+.zoo .contacts-info-address {
+  font-weight: bold;
+  margin: 5rem 0 2rem;
+}
+.zoo .contacts .info > div {
+  display: inline-block;
+}
+.zoo .contacts .info .data {
+  font-weight: bold;
+  color: #DC3B53;
+}
+.zoo .title-wrapper.right {
+  text-align: right;
+}
+.zoo .title-wrapper.right .zoo-title {
+  transform: rotate(7deg);
+}
+.zoo .title-wrapper.left {
+  text-align: left;
+}
+.zoo .title-wrapper.center {
+  text-align: center;
+}
+.zoo-title {
+  display: inline-block;
+}
+.zoo .hero-content.center {
+  max-width: 1000px;
+}
+.zoo .block-one {
+  top: 1310.38px;
+  background: #AD6251;
+  transform: translateX(-50%) rotate(6.23deg);
+}
+.zoo .hero:before {
+  background: #F3F3F3;
+  transform: rotate(-1.71deg);
+}
+.zoo .hero:after {
+  background: linear-gradient(103.56deg, #C38367 15.86%, #963E39 82.46%);
+  transform: rotate(1.52deg);
+}
+.zoo .animal-title {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 114%;
+  color: #DC5555;
+}
+.zoo .animal-latin {
+  font-family: "Poppins", sans-serif;
+}
+.zoo .admission {
+  color: white;
+  max-width: 1043px;
+  margin: 9rem auto;
+}
+.zoo .admission-image-adult {
+  margin-right: 2.5rem;
+}
+.zoo .admission-image-children {
+  margin-left: 2.5rem;
+}
+.zoo .admission-ticket > div {
+  display: inline-block;
+}
+.zoo .admission-ticket.children {
+  text-align: right;
+}
+.zoo .admission-ticket.children .admission-price {
+  color: #E87CAF;
+}
+.zoo .admission-ticket.adult {
+  margin-top: 4rem;
+  margin-bottom: 7.5rem;
+}
+.zoo .admission-ticket.adult .admission-price {
+  color: #FDB638;
+}
+.zoo .admission-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 54px;
+  color: #F1F1F1;
+}
+.zoo .admission-text {
+  font-size: 14px;
+  line-height: 19px;
+  max-width: 400px;
+  display: inline-block;
+  color: #DADADA;
+}
+.zoo .admission-price {
+  font-weight: bold;
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 1rem;
+}
+.zoo .admission-price span {
+  font-weight: normal;
+}
+
+@media (max-width: 720px) {
+  .zoo .animal-image {
+    max-width: 100%;
+  }
+  .zoo .animal-title {
+    font-size: 20px;
+  }
+  .zoo .desktop {
+    display: none !important;
+  }
+  .zoo .mobile {
+    display: block !important;
+  }
+  .zoo .carousel-item:nth-child(2) {
+    margin-bottom: 2rem;
+  }
+  .zoo .carousel-item:nth-child(3) {
+    clear: both;
+  }
+  .zoo .admission {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+  .zoo .admission-image-adult, .zoo .admission-image-children {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .zoo .admission-ticket.adult {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .zoo .admission-ticket.children {
+    text-align: center;
+  }
+  .zoo .admission-ticket.children .admission-title, .zoo .admission-ticket.children .admission-text {
+    color: black;
+  }
+  .zoo .contacts-info-wrapper {
+    font-size: 18px;
+  }
+  .zoo .contacts-info-address {
+    margin-top: 2rem;
+  }
+  .zoo .snake {
+    bottom: -25px;
+    max-width: 30vw;
+    right: 20px;
+  }
+  .zoo .branch-one, .zoo .branch-two {
+    max-width: 100vw;
+  }
+  .zoo .branch-three {
+    bottom: -26vw;
+    left: 0;
+    max-width: 47vw;
+  }
+  .zoo .title-wrapper, .zoo .title-wrapper.left, .zoo .title-wrapper.right {
+    text-align: center;
+  }
+}
+.bg-shadow {
+  position: absolute;
+  left: 50%;
+  top: -400px;
+  transform: translateX(-50%);
+  z-index: -10;
+  mix-blend-mode: multiply;
+}
+
+.scorpion {
+  display: none;
+}
+
+.invert {
+  filter: invert(1);
+  background: black;
+}
+.invert .scorpion {
+  display: block;
+}
+
+.foot {
+  display: none;
+  position: absolute;
+  width: 32px;
+  height: 84px;
+  background: black;
+  z-index: -1;
+  background: url("../img/foot.png");
+}
+.foot.odd {
+  background: url("../img/foot-odd.png");
+}
+
+/*# sourceMappingURL=theme.css.map */

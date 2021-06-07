@@ -1,0 +1,51 @@
+doctype html
+html(lang="en")
+    head
+        title= "Monument Of Freedom"
+        meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/theme.css")
+    body.monument
+        .page-wrapper
+            include ./jade-components/menu.jade
+            img.bg-shadow(src="./img/home/bg_shadow.png")
+            img.bg-shadow(src="./img/home/bg_shadow.png")
+            img.line(src="./img/monument/monument_line.png")
+            img.monument(src="./img/monument/monument_monument.png")
+            .block
+                .block-one
+            .container 
+                .hero
+                    .hero-container
+                        .hero-content.center
+                            h1.hero-title.jst Monument Of Freedom
+                            p.hero-text.jst The Freedom Monument is located in Riga, Latvia, honouring soldiers killed during the Latvian War of Independence. It is considered an important symbol of the freedom, independence, and sovereignty of Latvia.
+                main
+                    .history-events
+                        .event-wrapper
+                            .event
+                                .event-date.road-stop-number.text 1922
+                                .event-title.jst Idea Of Monument
+                                .event-text.jst In 1922, Prime Minister Z.A. Meierovics proposed to build a monument to the soldiers who fell in the Latvian liberation struggle. In 1923, the Ministers adopted the rules of the competition. In the December 1930 competition ended.
+                        .event-wrapper    
+                            .event
+                                .event-date.road-stop-number.text 1927
+                                .event-title.jst Budget Allocation
+                                .event-text.jst In 1927, 13 committees of the Freedom Monument districts operated throughout Latvia to raise money. Donation marks were distributed - 20, 50 sant. (for children), worth 1,5,10,20 and 100 lats. The response from the people was amazing. In total, about 3 million lats were donated!
+                        .event-wrapper
+                            .event
+                                .event-date.road-stop-number.text 1935
+                                .event-title.jst Unveiling of the Freedom Monument
+                                .event-text.jst On the opening day of November 18, 1935. The cover is removed, the anthem is played, planes are flying, the monument is consecrated by Archbishop Teodors Grīnbergs. The celebration continues with an army parade. Then a popular procession runs along the monument. The people celebrate the anniversary of the founding of the country and the unveiling of the monument.
+                        .event-wrapper    
+                            .event
+                                .event-date.road-stop-number.text 1979
+                                .event-title.jst First Restoration
+                                .event-text.jst In 1979, the Riga Executive Committee commissioned a project to restore the Freedom Monument. The project was developed and supervised by architects Raimonds Aide and Juris Gusevs. The real feat in the current situation was the restoration of the gilding of the three stars and the belt, despite and a strict ban on doing so.
+                        .event-wrapper    
+                            .event
+                                .event-date.road-stop-number.text 2000
+                                .event-title.jst Monument Restoration Work
+                                .event-text.jst In 2000, the restoration of the monument began. The image of freedom and its stars were cleaned, restored and re-gilded. The base, obelisk, stairs and interior of the monument were also restored, but the stone materials were cleaned and sewn.
+                include ./jade-components/footer.jade
+        include ./jade-components/frame.jade
